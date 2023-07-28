@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "wg-client"
+version = "0.1.0"
+description = ""
+authors = ["1ort"]
+readme = "README.md"
+packages = [{include = "wgrest"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.1.1"
+httpx = "^0.24.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
