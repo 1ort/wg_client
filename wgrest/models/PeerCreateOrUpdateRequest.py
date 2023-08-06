@@ -18,6 +18,8 @@ class PeerCreateOrUpdateRequest(BaseModel):
 
     allowed_ips: Optional[List[str]] = Field(alias="allowed_ips", default=None)
 
-    persistent_keepalive_interval: Optional[str] = Field(alias="persistent_keepalive_interval", default=None)
+    persistent_keepalive_interval: Optional[str] = Field(
+        alias="persistent_keepalive_interval", default=None
+    )
 
     endpoint: Optional[str] = Field(alias="endpoint", default=None)
